@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freestyle & Rap Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <h1>Freestyle & Rap Festival</h1>
+        <nav class="navegacion-principal">
+          <a  href="#lineup">Line Up</a>
+          <a  href="#galeria">Galeria</a>
+          <a  href="#boletos">Boletos</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video">
+      <div class="overlay">
+        <div class="contenedor contenido-video">
+          <h2>Freestyle & Rap Festival</h2>
+          <p>Enero 2023, Chiapas, México.</p>
+        </div>
+      </div>
+      <video autoplay muted loop>
+        <source src="video/introhiphap.mp4" type="video/mp4" />
+        <source src="video/introhiphap.ogg" type="video/ogg" />
+        <source src="video/introhiphap.webm" type="video/webm" />
+      </video>
+    </div>
+    <section class="contenedor sobre-festival">
+      <div class="imagen">
+        <picture>
+          <source srcset="build/img/imagen_freestyle.avif" type="image/avif" />
+          <source srcset="build/img/imagen_freestyle.webp type="image/webp">
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/imagen_freestyle.jpg"
+            alt="imagen freestyle"
+          />
+        </picture>
+      </div>
+      <div class="contenido-festival">
+        <h2>Freestyle & Rap Festival</h2>
+        <p class="fecha">Enero 2023, Chiapas, México.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          asperiores quidem, quibusdam iusto ab dolore nisi accusamus tempore
+          dicta, veniam doloremque rerum ducimus cumque eum vero delectus sunt.
+          Voluptates, alias!
+        </p>
+      </div>
+    </section>
+    <section id="lineup" class="lineup">
+      <h3>Line Up</h3>
+      <p class="dia">Viernes 27</p>
+      <div class="escenarios-contenedor contenedor">
+        <div class="escenario freestyle bg-amarillo">
+          <p class="nombre-escenario">Escenario Freestyle</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Aczino vs Wos (Batalla de Exhibición)</span></li>
+            <li>22:00 | <span>Gazir vs Chuty</span></li>
+            <li>20:00 | <span>Marithea vs Sara socas</span></li>
+            <li>19:00 | <span>Danger vs Piezas (Batalla escrita)</span></li>
+            <li>18:00 | <span>Bnet vs Valles-T</span></li>
+            <li>17:00 | <span>Aczino vs Chuty</span></li>
+          </ul>
+        </div>
+        <!-- .escenario -->
+        <div class="escenario rap bg-verde">
+          <p class="nombre-escenario">Escenario Rap</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Cypress Hill</span></li>
+            <li>22:00 | <span>Control Machete</span></li>
+            <li>20:00 | <span>Cartel de Santa</span></li>
+            <li>19:00 | <span>Lil Supa</span></li>
+
+            <li>18:00 | <span>Akapellah</span></li>
+            <li>17:00 | <span>Eptos Uno</span></li>
+          </ul>
+        </div>
+        <!-- .escenario -->
+      </div>
+      <!-- .escenarios-contenedor -->
+
+      <p class="dia">Sábado 28</p>
+      <div class="escenarios-contenedor contenedor">
+        <div class="escenario freestyle bg-verde">
+          <p class="nombre-escenario">Escenario Freestyle</p>
+          <ul class="calendario">
+            <li>
+              24:00 | <span>Teorema vs Nitro (Batalla de Exhibición)</span>
+            </li>
+            <li>22:00 | <span>Liga de Campeones</span></li>
+            <li>20:00 | <span>Zasko vs Sweet Paint</span></li>
+            <li>19:00 | <span>Blon vs Acertijo</span></li>
+
+            <li>18:00 | <span>Mecha vs Skone</span></li>
+            <li>17:00 | <span>Tirpa vs Lobo Estepario</span></li>
+          </ul>
+        </div>
+        <!-- .escenario -->
+        <div class="escenario rap bg-amarillo">
+          <p class="nombre-escenario">Escenario Rap</p>
+          <ul class="calendario">
+            <li>24:00 | <span>The Psycho Realm </span></li>
+            <li>22:00 | <span>Delinquent Habits</span></li>
+            <li>20:00 | <span>Faruz Feet</span></li>
+            <li>19:00 | <span>Someone SM1</span></li>
+
+            <li>18:00 | <span>Under Side 821</span></li>
+            <li>17:00 | <span>Kodigo 36</span></li>
+          </ul>
+        </div>
+        <!-- .escenario -->
+      </div>
+      <!-- .escenarios-contenedor -->
+    </section>
+    <section id="galeria" class="galeria contenedor">
+      <h3>Galería</h3>
+      <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+      <h3>Boletos</h3>
+      <div class="contenedor contenedor-boletos">
+        <div class="basico pase">
+          <p class="nombre-pase">Pase 1 día</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y Bebida </li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$100</p>
+         </footer>
+        </div>
+        <div class="premium pase">
+          <p class="nombre-pase">Pase 2 días</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Comida y Bebida </li>
+              <li>Camisa del Evento </li>
+              <li>Acceso VIP </li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$180</p>
+         </footer>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <p>Freestyle & Rap Festival. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+  </body>
+</html>
